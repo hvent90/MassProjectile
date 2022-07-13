@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "0.1",
+	"FriendlyName": "MassProjectile",
+	"Description": "Replicated Projectiles using UE5's MassEntity",
+	"Category": "Other",
+	"CreatedBy": "Henry Ventura",
+	"CreatedByURL": "https://github.com/hvent90/mass-projectile",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "MassProjectile",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
