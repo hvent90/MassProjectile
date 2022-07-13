@@ -8,6 +8,46 @@ public class MassProjectile : ModuleRules
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 		
+		PublicDependencyModuleNames.AddRange(new string[]
+		{
+			"Core", "CoreUObject", "Engine", "InputCore", "Niagara", "AIModule", "SmartObjectsModule"
+		});
+
+		PrivateDependencyModuleNames.AddRange(
+			new string[] {
+				"MassEntity",
+				"StructUtils",
+				"MassCommon",
+				"MassMovement",
+				"MassActors",
+				"MassSpawner",
+				"MassGameplayDebug",
+				"MassSignals",
+				"MassCrowd",
+				"MassActors",
+				"MassSpawner",
+				"MassRepresentation",
+				"MassReplication",
+				"MassNavigation",
+
+				//needed for replication setup
+				"NetCore",
+				"AIModule",
+
+				"ZoneGraph",
+				"MassGameplayDebug",
+				"MassZoneGraphNavigation", 
+				"Niagara",
+				"DeveloperSettings",
+				"GeometryCore",
+				"MassAIBehavior",
+				"StateTreeModule",
+				"MassLOD",
+				"NavigationSystem",
+				"DerivedDataCache"
+			}
+		);
+		
 		PublicIncludePaths.AddRange(
 			new string[] {
 				// ... add public include paths required here ...
